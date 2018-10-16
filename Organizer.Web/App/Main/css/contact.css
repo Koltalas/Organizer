@@ -1,0 +1,15 @@
+﻿.contact-image{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.parent-for-img{
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+
+}
+
+.contact-label{
+    font-size: 30px;
+}

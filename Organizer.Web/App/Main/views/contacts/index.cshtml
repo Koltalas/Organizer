@@ -1,0 +1,16 @@
+﻿<div ng-controller="app.views.contacts.index as vm">
+    <h1>@L("Contacts")</h1>
+    <button class="btn refresh manage-eventlist-btn" ng-click="refreshContacts()">@L("Refresh")</button>
+    <ul class="list-group">
+        <li class="list-group-item">
+            <h4>@L("Contacts"):</h4>
+            <input class="form-control" placeholder="@L("SeachYourContactszOrAddUser")" type="text" ng-model="searchText">
+            <contact class="list-group-item" ng-repeat="contact in vm.contacts | orderBy: 'fullName' | filter: searchText">
+                <div class="parent-for-img">
+                    <img class="contact-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK4tha5ABLdaoT4xzAflM-ZzrLvI3WpbasdTCY7Auq5fkBMm0GMw" />
+                </div>
+                {{contact.fullName}}
+            </contact>
+        </li>
+    </ul>
+</div>

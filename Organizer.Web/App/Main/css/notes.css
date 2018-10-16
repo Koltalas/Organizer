@@ -1,0 +1,107 @@
+﻿@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro);
+
+* {
+  box-sizing:border-box;
+}
+
+
+img {
+  max-width:100%;
+  height:auto;
+}
+
+.noteContent {
+    font-size: 1.2em;
+    font-family: 'Source Sans Pro', sans-serif;
+    border: none;
+    box-shadow: none;
+    margin: 0;
+    width: 100%;
+    padding: 10px 20px 10px;
+    min-height: 50px;
+    background: white;
+}
+
+
+.noteContent :focus {
+        font-family: 'Source Code Pro', courier, monospace;
+        font-size: 1em;
+}
+
+.add-notes-input{
+    width: 100%;
+}
+
+
+.add-notes-btn {
+    width: 50%;
+}
+
+.note {
+    background: #3399ff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    margin: 30px 0;
+    padding-top: 40px;
+    min-height: 50px;
+    width: 100%;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.date {
+  position:absolute;
+  top:0;
+  left:0;
+  padding:15px;
+  font-size:1em;
+  font-style: italic;
+  color:#ffffff;
+}
+
+.note-title {
+    display: inline;
+    font-size: 1.5em;
+    font-style: italic;
+    color: #ffffff;
+    width: 100%;
+    background-color: transparent;
+}
+
+.note-input {
+    background-color: transparent;
+    border: none;
+    display: inline;
+    margin-left: 20px;
+    background-color: transparent;
+}
+
+.icons {
+  position:absolute;
+  right:0;
+  top:0;
+  padding:10px;
+}
+
+.fa-trash-o, .fa-plus-circle {
+   display: inline;
+  cursor:pointer;
+}
+
+.fa-check {
+  color: lawngreen;
+}
+
+.fa-trash-o {
+  color:red;
+}
+
+.fa-pencil {
+  color: yellow;
+}
+
+.fa-plus-circle {
+  color:#71CBD0;
+  
+}

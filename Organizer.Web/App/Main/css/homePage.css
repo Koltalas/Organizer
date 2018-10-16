@@ -1,0 +1,89 @@
+﻿body{
+    background-color: white;
+}
+
+.calendarDiv {
+    box-shadow: 0 0 10px #000000;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    padding: 10px;
+}
+
+.manage-eventlist-btn {
+    display: inline;
+}
+
+
+.event-selector {
+    display: inline;
+    background-color: dodgerblue;
+}
+
+.multiselect-parent {
+    background-color: dodgerblue;
+}
+
+
+.todoDiv {
+    box-shadow: 0 0 10px #000000;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    padding: 10px;
+    padding-right: 15px;
+    margin-top: 20px;
+    height: 40vh;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.contacts-container {
+    margin-top: 20px;
+    height: 40vh;
+    overflow: auto;
+}
+
+.notes-container {
+    box-shadow: 0 0 10px #000000;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    padding: 10px;
+    height: 85vh;
+    overflow: auto;
+}
+
+.centered {
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    overflow: auto;
+    margin-top: 10px;
+}
+
+.timelineDiv {
+    background-color: #ffaaff;
+    height: 80vh;
+    overflow: auto;
+}
+
+.red {
+    color: red;
+   
+}
+
+.blue {
+    color: blue;
+}
+
+.toggle {
+    left: 0;
+    top: 0;
+    position: absolute;
+    margin-top: -25px;
+    font-size: 25px;
+}
+
+.refresh{
+    background-color: blue;
+    color: white;
+}
+
+.fullcalendar-div{
+    height : 60vh;
+}

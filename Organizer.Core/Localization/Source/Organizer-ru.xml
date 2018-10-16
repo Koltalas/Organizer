@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<localizationDictionary culture="ru">
+  <texts>
+    <text name="HomePage" value="Домашняя страница" />
+    <text name="About" value="О программе" />
+    <text name="WellcomeMessage" value="Добро пожаловать в Organizer!" />
+
+    <text name="FormIsNotValidMessage" value="Фома некорректна. Исправьте ошибки." />
+    <text name="TenantNameCanNotBeEmpty" value="Имя клиента не может быть пустым" />
+
+    <text name="InvalidUserNameOrPassword" value="Неверное имя пользователя или пароль" />
+    <text name="ThereIsNoTenantDefinedWithName{0}" value="Нет клиента с именем {0}" />
+    <text name="TenantIsNotActive" value="Клиент {0} не активен." />
+    <text name="UserIsNotActiveAndCanNotLogin" value="Пользователь {0} не активен и не может выполнить вход." />
+    <text name="UserEmailIsNotConfirmedAndCanNotLogin">Ваш емейл не подтвержден и вы не можете выполнить вход</text>
+    <text name="UserLockedOutMessage">Аккаунт пользователя заблокирован. Попробуйте позже.</text>
+    <text name="PleaseEnterLoginInformation" value="Введите информацию для входа" />
+    <text name="TenancyName" value="Имя клиента" />
+    <text name="UserNameOrEmail" value="Имя пользователя или емейл" />
+    <text name="Password" value="Пароль" />
+    <text name="RememberMe" value="Запомнить меня" />
+    <text name="LogIn" value="Войти" />
+
+    <text name="LoginFailed" value="Вход неудался!" />
+
+    <text name="NameSurname" value="Имя фамилия" />
+    <text name="UserName" value="Имя пользователя" />
+    <text name="Name" value="Имя" />
+    <text name="Surname" value="Фамилия" />
+    <text name="EmailAddress" value="Емейл" />
+
+    <text name="Tenants" value="Клиенты" />
+    <text name="SavedSuccessfully" value="Данные успешно сохранены" />
+    <text name="CreateNewTenant" value="Создайте нового клиента" />
+    <text name="AdminEmailAddress" value="Емейл администратора" />
+    <text name="Save" value="Сохранить" />
+    <text name="Cancel" value="Отмена" />
+    <text name="TenantName_Regex_Description" value="Имя клиента должно иметь хотя бы 2 символа, начинаться с буквы и продолжаться с буквы, цифры или ниженго подчеркивания." />
+    <text name="DefaultPasswordIs" value="Пароль по умолчанию {0}" />
+    <text name="CanBeEmptyToLoginAsHost" value="Может быть пустым для входа как хост." />
+    <text name="Register" value="Регистрация" />
+    <text name="OrLoginWith" value="Или же с помощью" />
+    <text name="WaitingForActivationMessage" value="Ваш аккаунт ожидает активации администратором." />
+    <text name="TenantSelection" value="Выбор клиентов" />
+    <text name="TenantSelection_Detail" value="Пожалуйста, выберите одного из клиентов." />
+    <text name="Logout" value="Выйти" />
+
+    <text name="RegisterFormUserNameInvalidMessage">Пожалуйста, не используйте ваш емейл как имя пользователя.</text>
+
+    <text name="DatabaseConnectionString" value="Строка подключения к БД" />
+    <text name="Users" value="Пользователи" />
+    <text name="IsActive" value="Активен" />
+    <text name="FullName" value="Полное имя" />
+    <text name="CreateNewUser" value="Создайте нового пользователя" />
+    <text name="Yes" value="Да" />
+    <text name="No" value="Нет" />
+    <text name="Optional" value="Необязательно" />
+
+    <text name="Contacts" value="Контакты" />
+    <text name="FName" value="Фамилия" />
+    <text name="LName" value="Имя" />
+    <text name="PhoneNumber" value="Номер телефона" />
+    <text name="Birthday" value="День рождения" />
+    <text name="Adress" value="Адрес" />
+    <text name="Username" value="Имя пользователя" />
+    <text name="LinkSuccess" value="Успешно привязан" />
+    <text name="LinkToUser" value="Привязать к пользователю" />
+    <text name="SeachYourContactszOrAddUser" value="Поиск существующего либо добавление нового" />
+    <text name="UpdateContact" value="Редактировать контакт" />
+
+
+    <text name="ManageLists" value="Управление списками" />
+
+    <text name="Refresh" value="Обновить" />
+    <text name="Userpage" value="Профиль" />
+
+    <text name="Calendar" value="Календарь" />
+    <text name="CheckAll" value="Выбрать все" />
+    <text name="UncheckAll" value="Сбросить выбор" />
+    <text name="Search" value="Поиск" />
+    <text name="Select" value="Выбрать" />
+    <text name="SelectAll" value="Выбрать все" />
+    <text name="All" value="Все" />
+    <text name="EventTitle" value="Название" />
+    <text name="Events" value="События" />
+    <text name="TimeSlot" value="Временной промежуток" />
+    <text name="Description" value="Описание" />
+    <text name="Update" value="Обновить" />
+    <text name="Delete" value="Удалить" />
+    <text name="EventListManaging" value="Управления списками событий" />
+    <text name="FindOrAddAnotherList" value="Найти или добавить список" />
+    <text name="PassworForSharing" value="Пароль" />
+    <text name="Key" value="Ключ" />
+    <text name="EnterFollowKey" value="Введите ключ" />
+    <text name="EnterPassword" value="Введите пароль" />
+    <text name="Follow" value="Следовать" />
+    <text name="Ok" value="Ок" />
+    <text name="SelectedEvent" value="Выбранное событие" />
+    <text name="EventTitleRequired" value="Требуется название" />
+
+
+    <text name="Notes" value="Заметки" />
+    <text name="LookingFor" value="Я ищу" />
+
+
+
+    <text name="ToDo" value="Список дел" />
+    <text name="ToDos" value="Список дел" />
+    <text name="TodoListManaging" value="Управление списками дел" />
+    <text name="PasswordForSharing" value="Пароль" />
+    <text name="SelectTodoList" value="Выберите список дел" />
+    <text name="INeedTo" value="Мне нужно" />
+    <text name="YouGot" value="Вам осталось" />
+    <text name="ThingsToDo" value="дел" />
+    <text name="ClearCompleted" value="Очистить выполненные" />
+
+    <text name="Email" value="Емейл" />
+    <text name="ForgotPassword" value="Забыли пароль" />
+    <text name="SubmitLink" value="Отправить ссылку" />
+
+
+    <text name="Add" value="Добавить" />
+    <text name="Title" value="Название" />
+
+    <text name="CreatedSuccess" value="Успешно создано" />
+    <text name="DeletedSuccess" value="Успешно удалено" />
+    <text name="UpdatedSuccess" value="Успешно обновлено" />
+    <text name="FollowSuccess" value="Успешно добавлено" />
+    <text name="CrearedSuccess" value="Успешно очищено" />
+
+
+  </texts>
+</localizationDictionary>

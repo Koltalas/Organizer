@@ -1,0 +1,172 @@
+DEBUG 2018-10-16 20:30:50,622 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-10-16 20:30:50,635 [1    ] Abp.Modules.AbpModuleManager             - Found 16 ABP modules in total.
+DEBUG 2018-10-16 20:30:50,644 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Organizer.Web.OrganizerWebModule, Organizer.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-10-16 20:30:50,646 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Organizer.OrganizerDataModule, Organizer.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-10-16 20:30:50,646 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-10-16 20:30:50,647 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-10-16 20:30:50,647 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-10-16 20:30:50,647 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-10-16 20:30:50,648 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-10-16 20:30:50,648 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Organizer.OrganizerCoreModule, Organizer.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-10-16 20:30:50,648 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Organizer.OrganizerApplicationModule, Organizer.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-10-16 20:30:50,648 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-10-16 20:30:50,648 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Organizer.Api.OrganizerWebApiModule, Organizer.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-10-16 20:30:50,648 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-10-16 20:30:50,648 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-10-16 20:30:50,648 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-10-16 20:30:50,648 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-10-16 20:30:50,649 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-10-16 20:30:50,652 [1    ] Abp.Modules.AbpModuleManager             - 16 modules loaded.
+DEBUG 2018-10-16 20:30:51,050 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-10-16 20:30:51,050 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-10-16 20:30:51,050 [1    ] o.Configuration.LanguageManagementConfig - Converted Organizer (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-10-16 20:30:51,051 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-10-16 20:30:51,417 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: Organizer.EntityFramework.OrganizerDbContext, Organizer.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-10-16 20:30:54,049 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2018-10-16 20:30:54,079 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-10-16 20:30:54,089 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2018-10-16 20:30:54,096 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Organizer
+DEBUG 2018-10-16 20:30:54,098 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2018-10-16 20:30:54,167 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-10-16 20:30:54,241 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 17 classes define auto mapping attributes
+DEBUG 2018-10-16 20:30:54,241 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Organizer.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2018-10-16 20:30:54,244 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Organizer.Sessions.Dto.UserLoginInfoDto
+DEBUG 2018-10-16 20:30:54,245 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Organizer.Users.Dto.UserDetailOutput
+DEBUG 2018-10-16 20:30:54,245 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Organizer.Users.Dto.CreateUserInput
+DEBUG 2018-10-16 20:30:54,245 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Organizer.Users.Dto.UserListDto
+DEBUG 2018-10-16 20:30:54,245 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Organizer.ToDos.Dto.ToDoElemDetailOutput
+DEBUG 2018-10-16 20:30:54,245 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Organizer.ToDos.Dto.ToDoListDetailOutput
+DEBUG 2018-10-16 20:30:54,245 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Organizer.ToDos.Dto.ToDoUsersDetailOutput
+DEBUG 2018-10-16 20:30:54,245 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Organizer.MultiTenancy.Dto.CreateTenantInput
+DEBUG 2018-10-16 20:30:54,245 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Organizer.MultiTenancy.Dto.TenantListDto
+DEBUG 2018-10-16 20:30:54,245 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Organizer.Notes.Dto.NoteDetailOutput
+DEBUG 2018-10-16 20:30:54,245 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Organizer.Notes.Dto.NoteListDto
+DEBUG 2018-10-16 20:30:54,246 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Organizer.Events.Dto.EventDetailOutput
+DEBUG 2018-10-16 20:30:54,246 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Organizer.Events.Dto.EventListDetailOutput
+DEBUG 2018-10-16 20:30:54,246 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Organizer.Events.Dto.EventUsersDetailOutput
+DEBUG 2018-10-16 20:30:54,246 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Organizer.Contacts.Dto.ContactDetailOutput
+DEBUG 2018-10-16 20:30:54,246 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Organizer.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2018-10-16 20:30:55,657 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Organizer.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2018-10-16 20:30:55,658 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Organizer.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2018-10-16 20:30:55,660 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Organizer.ToDos.IToDoAppService' with service name 'app/toDo'.
+DEBUG 2018-10-16 20:30:55,661 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Organizer.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2018-10-16 20:30:55,662 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Organizer.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2018-10-16 20:30:55,663 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Organizer.Notifications.INotificationAppService' with service name 'app/notification'.
+DEBUG 2018-10-16 20:30:55,664 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Organizer.Notes.INoteAppService' with service name 'app/note'.
+DEBUG 2018-10-16 20:30:55,665 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Organizer.Events.IEventAppService' with service name 'app/event'.
+DEBUG 2018-10-16 20:30:55,666 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'Organizer.Contacts.IContactAppService' with service name 'app/contact'.
+WARN  2018-10-16 20:31:03,555 [6    ] Abp.Logging.LogHelper                    - Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo)
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo)
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+WARN  2018-10-16 20:31:40,906 [17   ] Abp.Logging.LogHelper                    - Can not find 'Identity.DuplicateUserName' in localization source 'AbpZero'!
+WARN  2018-10-16 20:32:22,379 [16   ] Abp.Logging.LogHelper                    - Can not find 'Identity.DuplicateUserName' in localization source 'AbpZero'!
+WARN  2018-10-16 20:32:44,819 [19   ] anizer.Web.Controllers.AccountController - Method arguments are not valid! See ValidationErrors for details.
+Abp.Runtime.Validation.AbpValidationException: Method arguments are not valid! See ValidationErrors for details.
+   at Abp.Runtime.Validation.Interception.MethodInvocationValidator.Validate()
+   at Abp.Web.Mvc.Validation.AbpMvcValidationFilter.OnActionExecuting(ActionExecutingContext filterContext)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.InvokeActionMethodFilterAsynchronouslyRecursive(Int32 filterIndex)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.InvokeActionMethodFilterAsynchronouslyRecursive(Int32 filterIndex)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.InvokeActionMethodFilterAsynchronouslyRecursive(Int32 filterIndex)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__31(AsyncCallback asyncCallback, Object asyncState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallBeginDelegate(AsyncCallback callback, Object callbackState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.Begin(AsyncCallback callback, Object state, Int32 timeout)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.BeginInvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters, AsyncCallback callback, Object state)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__19(AsyncCallback asyncCallback, Object asyncState)
+WARN  2018-10-16 20:32:44,820 [19   ] anizer.Web.Controllers.AccountController - There are 2 validation errors:
+WARN  2018-10-16 20:32:44,820 [19   ] anizer.Web.Controllers.AccountController - The UsernameOrEmailAddress field is required. (UsernameOrEmailAddress)
+WARN  2018-10-16 20:32:44,820 [19   ] anizer.Web.Controllers.AccountController - The Password field is required. (Password)
+WARN  2018-10-16 20:33:03,648 [16   ] anizer.Web.Controllers.AccountController - Login failed!
+Abp.UI.UserFriendlyException: Login failed!
+   at Organizer.Web.Controllers.AccountController.<GetLoginResultAsync>d__11.MoveNext() in E:\Workspaces\C#\SigmaOrganizer\Organizer.Reborn\Organizer.Web\Controllers\AccountController.cs:line 116
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Organizer.Web.Controllers.AccountController.<Login>d__10.MoveNext() in E:\Workspaces\C#\SigmaOrganizer\Organizer.Reborn\Organizer.Web\Controllers\AccountController.cs:line 86
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+WARN  2018-10-16 20:36:17,641 [28   ] anizer.Web.Controllers.AccountController - Login failed!
+Abp.UI.UserFriendlyException: Login failed!
+   at Organizer.Web.Controllers.AccountController.<GetLoginResultAsync>d__11.MoveNext() in E:\Workspaces\C#\SigmaOrganizer\Organizer.Reborn\Organizer.Web\Controllers\AccountController.cs:line 116
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Organizer.Web.Controllers.AccountController.<Login>d__10.MoveNext() in E:\Workspaces\C#\SigmaOrganizer\Organizer.Reborn\Organizer.Web\Controllers\AccountController.cs:line 86
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Mvc.Async.TaskAsyncActionDescriptor.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass37.<BeginInvokeAsynchronousActionMethod>b__36(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)

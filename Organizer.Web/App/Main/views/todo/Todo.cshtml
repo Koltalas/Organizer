@@ -1,0 +1,80 @@
+﻿<div ng-controller="TodoCtrl">
+<h1 style="display: inline;">@L("ToDos")</h1>
+
+<button class="btn btn-danger pull-right manage-list-btn" ng-click="ShowTodoManage()">@L("ManageLists")</button>
+
+
+<script type="text/ng-template" id="modalTodoLists.html">
+    <div class="modal-header">
+        <h3 class="modal-title">@L("TodoListManaging")</h3>
+    </div>
+    <div class="modal-body">
+        <form>
+            <input class="form-control" placeholder="@L("FindOrAddAnotherList")" type="text"  ng-model="newList" />
+            <input class="form-control" placeholder="@L("PasswordForSharing")" ng-model="sharingPassword" />
+            <button class="form-control btn btn-primary" ng-click="addList()">
+                <i class="fa fa-plus"></i>@L("Add")
+            </button>
+        </form>
+        <ul class="list-group">
+            <li class="list-group-item" ng-repeat="list in todoLists | filter: newList">
+                <span ng-click="editList(list)" ng-show="!list.editList">{{list.title}}</span>
+                <i class="fa fa-edit pull-right blue" ng-show="list.editList" ng-click="list.editList = false"></i>
+                <label class="editInput" ng-show="list.sharingKey && !list.editList">@L("Key"): </label>
+                <label class="editInput" ng-show="list.sharingKey && !list.editList">{{list.sharingKey}}</label>
+                <i ng-click="removeList(list)" class="fa fa-remove pull-right red"></i>
+                <form ng-submit="saveEditsList(list, 'submit')" ng-show="list.editList" class="editInput">
+                    <input class="editInput" ng-show="list.editList" ng-trim="false" ng-model="list.title" todo-escape="revertEditsList(list)" ng-blur="saveEditsList(list, 'blur')" todo-focus="list == editedList">
+                    <select class="editInput" ng-show="list.editList" ng-model="selectedEvent" ng-options="x.title for x in events" ng-change="eventSelected(list, selectedEvent)">
+                        <option value="" disabled="" ng-selected="true">Add referense to event</option>
+                    </select>
+                </form>
+            </li>
+        </ul>
+        <form>
+            <input class="form-control" placeholder="@L("EnterFollowKey")" type="text" ng-disabled="saving" ng-model="followKey" />
+            <input class="form-control" placeholder="@L("EnterPassword")" ng-model="followPassword" />
+            <button class="form-control btn btn-primary" ng-click="follow()">
+                <i class="fa fa-bell-o"></i>@L("Follow")
+            </button>
+        </form>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" type="button" ng-click="ok()">@L("Ok")</button>
+    </div>
+</script>
+
+
+<select class="form-control centered" ng-model="SelectedTodoList" ng-options="x.title for x in todoLists" ng-change="changeList()">
+    <option value="" disabled="" ng-selected="true">@L("SelectTodoList")</option>
+</select>
+
+
+    <form>
+        <input class="form-control" placeholder="@L("INeedTo")..." type="text" ng-disabled="saving" ng-model="newTodo" />
+        <button class="form-control btn btn-primary" ng-click="addTodo()">
+            <i class="fa fa-plus"></i>@L("Add")
+        </button>
+    </form>
+    <div ng-show="SelectedTodoList.elems.length > 0">
+        <ul class="list-group">
+            <li class="list-group-item" ng-repeat="todo in todos | filter: newTodo">
+                <input type="checkbox" ng-model="todo.isCompleted" ng-click="toggleCompleted(todo,todo.isCompleted)">
+                <span ng-click="editTodo(todo)" class="done-{{todo.isCompleted}}" ng-show="!todo.edit" >{{todo.title}}</span>
+                <i class="fa fa-edit pull-right blue" ng-show="todo.edit" ng-click="todo.edit = false" ></i>
+                <i ng-click="removeTodo(todo)" class="fa fa-remove pull-right red"></i>
+                <form ng-submit="saveEdits(todo, 'submit')" ng-show="todo.edit" class="editInput" >
+                    <input class="editInput" ng-show="todo.edit" ng-trim="false" ng-model="todo.title" todo-escape="revertEdits(todo)" ng-blur="saveEdits(todo, 'blur')" todo-focus="todo == editedTodo">
+                </form>
+            </li>
+        </ul>
+        <h2 ng-show="todos.length > 0" class="container">@L("YouGot") {{getTotalTodos()}} @L("ThingsToDo")</h2>
+        <div class="centered">
+            <button class="btn btn-primary" style=" align-content: center; justify-content: center;" ng-click="clearCompletedTodos()">@L("ClearCompleted")</button>
+        </div>
+   </div>
+    <div ng-show="!SelectedTodoList.elems.length> 0">
+        <!--VSE DLYA TEBYA-->
+    </div>
+
+</div>

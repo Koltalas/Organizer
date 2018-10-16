@@ -1,0 +1,12 @@
+﻿
+<div ng-controller="notesCtrl">
+    <h1>@L("Notes")</h1>
+    <button class="btn refresh pull-right manage-eventlist-btn" ng-click="refreshNotes()">@L("Refresh")</button>
+    <input class="form-control add-notes-input" placeholder="@L("LookingFor")..." type="text" ng-model="newNote.title" />
+    <div class="note" ng-repeat="note in notes | filter: newNote.title | orderBy:'createdOn':true track by $index ">
+        <span class="date">{{note.creationTime | date:"EEEE dd MMMM, yyyy 'at' h:mma"}}</span>
+        <div class="note-title"> @L("Title"):<input readonly class="note-input" ng-model="note.title" placeholder="{{note.title}}" ng-focus="noteFocus(note)" ng-blur="update(note)" /></div>
+
+        <textarea readonly class="noteContent" ng-model="note.content"  contenteditable="false">{{ note.content }}</textarea>
+    </div>
+</div>

@@ -1,0 +1,47 @@
+﻿@*@using Abp.Authorization.Users*@
+<div>
+    <form name="contactCreateForm" role="form" novalidate class="form-validation" >
+        <div class="modal-header">
+            <h4 class="modal-title">
+                <span>@L("CrateNewContact")</span>
+            </h4>
+        </div>
+        <div class="modal-body">
+
+            <div class="form-group">
+                <label>@L("FName")*</label>
+                <input type="text" name="FName" class="form-control" ng-model="vm.contact.fName" required maxlength="@Organizer.Contacts.Contact.MaxFNameLength">
+            </div>
+
+            <div class="form-group">
+                <label>@L("LName")</label>
+                <input type="text" name="LName" class="form-control" ng-model="vm.contact.lName"  maxlength="@Organizer.Contacts.Contact.MaxLNameLegnth">
+            </div>
+
+            <div class="form-group">
+                <label>@L("Email")</label>
+                <input type="text" name="Email" class="form-control" ng-model="vm.contact.email"  maxlength="@Organizer.Contacts.Contact.MaxLNameLegnth">
+            </div>
+
+            <div class="form-group">
+                <label>@L("PhoneNumber")</label>
+                <input type="text" name="PhoneNumber" class="form-control" ng-model="vm.contact.phoneNumber"  maxlength="@Organizer.Contacts.Contact.MaxEmailLength">
+            </div>
+
+            <div class="form-group">
+                <label>@L("Birthday")</label>
+                <input type="date" name="PhoneNumber" class="form-control" ng-model="vm.contact.birthday">
+            </div>
+
+            <div class="form-group">
+                <label>@L("Adress")</label>
+                <input type="text" name="Adress" class="form-control" ng-model="vm.contact.adress" maxlength="@Organizer.Contacts.Contact.MaxAdressLength">
+            </div>
+
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" ng-click="vm.cancel()">@L("Cancel")</button>
+            <button type="submit" class="btn btn-primary blue" ng-click="vm.save()" ng-disabled="contactCreateForm.$invalid"><i class="fa fa-save"></i> <span>@L("Save")</span></button>
+        </div>
+    </form>
+</div>

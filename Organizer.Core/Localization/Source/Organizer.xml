@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<localizationDictionary culture="en">
+  <texts>
+    <text name="HomePage" value="Home page" />
+    <text name="About" value="About" />
+    <text name="WellcomeMessage" value="Welcome to Organizer!" />
+    
+    <text name="FormIsNotValidMessage" value="Form is not valid. Please check and fix errors." />
+    <text name="TenantNameCanNotBeEmpty" value="Tenant name can not be empty" />
+
+    <text name="InvalidUserNameOrPassword" value="Invalid user name or password" />
+    <text name="ThereIsNoTenantDefinedWithName{0}" value="There is no tenant defined with name {0}" />
+    <text name="TenantIsNotActive" value="Tenant {0} is not active." />
+    <text name="UserIsNotActiveAndCanNotLogin" value="User {0} is not active and can not log in." />
+    <text name="UserEmailIsNotConfirmedAndCanNotLogin">Your email address is not confirmed. You can not login</text>
+    <text name="UserLockedOutMessage">The user account has been locked out. Please try again later.</text>
+    <text name="PleaseEnterLoginInformation" value="Please enter login information" />
+    <text name="TenancyName" value="Tenancy name" />
+    <text name="UserNameOrEmail" value="User name or email" />
+    <text name="Password" value="Password" />
+    <text name="RememberMe" value="Remember me" />
+    <text name="LogIn" value="Log in" />
+
+    <text name="LoginFailed" value="Login failed!" />
+
+    <text name="NameSurname" value="Name surname" />
+    <text name="UserName" value="User name" />
+    <text name="Name" value="Name" />
+    <text name="Surname" value="Surname" />
+    <text name="EmailAddress" value="Email address" />
+
+    <text name="Tenants" value="Tenants" />
+    <text name="SavedSuccessfully" value="Saved successfully" />
+    <text name="CreateNewTenant" value="Create new tenant" />
+    <text name="AdminEmailAddress" value="Admin email address" />
+    <text name="Save" value="Save" />
+    <text name="Cancel" value="Cancel" />
+    <text name="TenantName_Regex_Description" value="Tenant name must be at least 2 chars, starts with a letter and continue with letter, number, dash or underscore." />
+    <text name="DefaultPasswordIs" value="Default password is {0}" />
+    <text name="CanBeEmptyToLoginAsHost" value="Can be empty to login as host." />
+    <text name="Register" value="Register" />
+    <text name="OrLoginWith" value="Or login with" />
+    <text name="WaitingForActivationMessage" value="Your account is waiting to be activated by system admin." />
+    <text name="TenantSelection" value="Tenant Selection" />
+    <text name="TenantSelection_Detail" value="Please select one of the following tenants." />
+    <text name="Logout" value="Logout" />
+
+    <text name="RegisterFormUserNameInvalidMessage">Please dont enter an email address for username.</text>
+
+    <text name="DatabaseConnectionString" value="Database connection string" />
+    <text name="Users" value="Users" />
+    <text name="IsActive" value="Is active" />
+    <text name="FullName" value="Full name" />
+    <text name="CreateNewUser" value="Create new user" />
+    <text name="Yes" value="Yes" />
+    <text name="No" value="No" />
+    <text name="Optional" value="Optional" />
+  
+    <text name="Contacts" value="Contacts" />
+    <text name="FName" value="First Name" />
+    <text name="LName" value="Last Name" />
+    <text name="PhoneNumber" value="Phone number" />
+    <text name="Birthday" value="Birthday" />
+    <text name="Adress" value="Address" />
+    <text name="LinkSuccess" value="Linked Successfully" />
+    <text name="Username" value="Username" />
+    <text name="LinkToUser" value="Link to User" />
+    <text name="UpdateContact" value="Update Contact" />
+    <text name="SeachYourContactszOrAddUser" value="Seach Your Contacts or Add New" />
+    
+    
+    <text name="ManageLists" value="Manage Lists" />
+
+
+    <text name="Refresh" value="Refresh" />
+    <text name="Userpage" value="Profile" />
+    
+    <text name="Calendar" value="Calendar" />
+    <text name="CheckAll" value="Check All" />
+    <text name="UncheckAll" value="Uncheck All" />
+    <text name="Search" value="Search" />
+    <text name="Select" value="Select" />
+    <text name="SelectAll" value="Select All" />
+    <text name="All" value="All" />
+    <text name="Today" value="Today" />
+    <text name="EventTitle" value="Event Title" />
+    <text name="Events" value="Events" />
+    <text name="TimeSlot" value="Time Slot" />
+    <text name="Description" value="Description" />
+    <text name="Update" value="Update" />
+    <text name="Delete" value="Delete" />
+    <text name="EventListManaging" value="Event List Managing" />
+    <text name="FindOrAddAnotherList" value="Find or add Another List" />
+    <text name="PassworForSharing" value="Passwor for Sharing" />
+    <text name="Key" value="Key" />
+    <text name="EnterFollowKey" value="Enter FollowKey" />
+    <text name="EnterPassword" value="Enter Password" />
+    <text name="Follow" value="Follow" />
+    <text name="Ok" value="Ok" />
+    <text name="SelectedEvent" value="Selected Event" />
+    <text name="EventTitleRequired" value="Event Title Required" />
+    
+    
+    <text name="Notes" value="Notes" />
+    <text name="LookingFor" value="I`m looking for" />
+    
+    
+    <text name="ToDo" value="To-do" />
+    <text name="ToDos" value="To-do" />
+    <text name="TodoListManaging" value="To-do List Managing" />
+    <text name="PasswordForSharing" value="Password for Sharing" />
+    <text name="SelectTodoList" value="Select To-do List" />
+    <text name="INeedTo" value="I Need to" />
+    <text name="YouGot" value="You got" />
+    <text name="ThingsToDo" value="Things to Do" />
+    <text name="ClearCompleted" value="Clear Completed" />
+    
+    
+    <text name="Email" value="Email" />
+    <text name="ForgotPassword" value="Forgot Password" />
+    <text name="SubmitLink" value="Submit Link" />
+    
+    <text name="Add" value="Add" />
+    <text name="Title" value="Title" />
+    
+    <text name="CreatedSuccess" value="Created Successfully" />
+    <text name="DeletedSuccess" value="Deleted Successfully" />
+    <text name="UpdatedSuccess" value="Updated Successfully" />
+    <text name="FollowSuccess" value="Followed Successfully" />
+    <text name="ClearedSuccess" value="Cleared Successfully" />
+
+
+  </texts>
+</localizationDictionary>

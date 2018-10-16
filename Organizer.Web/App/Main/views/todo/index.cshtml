@@ -1,0 +1,26 @@
+﻿<div ng-controller="TodoCtrl">
+    <h1 style="display: inline;">@L("ToDos")</h1>
+    <button class="btn refresh pull-right manage-eventlist-btn" ng-click="refreshTodo()">@L("Refresh")</button>
+    <select class="form-control centered" ng-model="SelectedTodoList" ng-options="x.title for x in todoLists" ng-change="changeList()">
+        <option value="" disabled="" ng-selected="true">@L("SelectTodoList")</option>
+    </select>
+
+
+    <div ng-show="SelectedTodoList.elems.length > 0">
+        <form>
+            <input class="form-control" placeholder="@L("INeedTo")..." type="text" ng-model="newTodo" />
+        </form>
+            <ul class="list-group">
+                <li class="list-group-item" ng-repeat="todo in todos | filter: newTodo">
+                    <input type="checkbox" ng-model="todo.isCompleted" ng-click="toggleCompleted(todo,todo.isCompleted)">
+                    <span class="done-{{todo.isCompleted}}">{{todo.title}}</span>
+                </li>
+            </ul>
+            <h2 ng-show="todos.length > 0" class="container">@L("YouGot") {{getTotalTodos()}} @L("ThingsToDo")</h2>
+     </div>
+    <div ng-show="!SelectedTodoList.elems.length > 0">
+
+    </div>
+
+
+</div>

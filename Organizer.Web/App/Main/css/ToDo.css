@@ -1,0 +1,21 @@
+﻿
+.done-true {
+    text-decoration: line-through;
+    color: #ddd;
+}
+
+
+.editInput {
+    background-color: transparent;
+    border: none;
+    display: inline;
+}
+
+.manage-list-btn {
+    display: inline;
+}
+
+
+
+
+

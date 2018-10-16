@@ -1,0 +1,43 @@
+﻿<div class="navbar navbar-inverse navbar-fixed-top" role="navigation" ng-controller="app.views.layout.header as vm">
+    <div class="container">
+        <div class="navbar-left">
+        </div>
+        <div class="navbar-header">
+                <a  class="navbar-brand" href="#/"><img src="~/App/Main/images/logo.png" /> Organizer</a>
+        </div>
+            <ul class="nav navbar-nav navbar-right">
+                    <li ng-if="vm.isUserSignedIn()" class="dropdown">
+                        <a href="" data-toggle="dropdown"><i class="fa fa-user"></i> <span>{{vm.getShownUserName()}}</span> <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#/userpage"><i class="fa fa-user-secret"></i> @L("Userpage")</a></li>
+                            <li><a href="@Url.Action("Logout", "Account")"><i class="fa fa-sign-out"></i> @L("Logout")</a></li>
+                        </ul>
+                    </li>
+                    <li ng-if="!vm.isUserSignedIn()">
+                        <a href="@Url.Action("Login", "Account")"><i class="fa fa-sign-in"></i> @L("LogIn")</a>
+                    </li>
+                @*<li class="dropdown">
+                    <a href="" data-toggle="dropdown"><i ng-class="vm.currentLanguage.icon"></i> <span>{{vm.currentLanguage.displayName}}</span> <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li ng-repeat="language in vm.languages" ng-hide="vm.currentLanguage.name == language.name"><a href="@(ApplicationPath)AbpLocalization/ChangeCulture?cultureName={{language.name}}"><i ng-class="language.icon"></i> {{language.displayName}}</a></li>
+                    </ul>
+                </li>*@
+            </ul>
+    </div>
+
+    <div id="mySidenav" class="sidenav">
+        <ul class="nav navbar-nav">
+            <li ng-repeat="menuItem in vm.menu.items" ng-class="{active: vm.currentMenuName == menuItem.name}">
+                <a ng-if="!menuItem.items.length" ng-href="{{menuItem.url}}"><i class="{{menuItem.icon}}" ng-if="menuItem.icon"></i> {{menuItem.displayName}}</a>
+                <a ng-if="menuItem.items.length" href="" data-toggle="dropdown"><i class="{{menuItem.icon}}" ng-if="menuItem.icon"></i> {{menuItem.displayName}} </a>
+                <ul ng-if="menuItem.items.length" class="dropdown-menu">
+                    <li ng-repeat="menuSubItem in menuItem.items">
+                        <a ng-href="{{menuSubItem.url}}"><i class="{{menuSubItem.icon}}" ng-if="menuSubItem.icon"></i> {{menuSubItem.displayName}}</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+

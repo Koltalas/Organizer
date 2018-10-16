@@ -1,0 +1,92 @@
+﻿<div class="row" ng-controller="calendarCtrl">
+    <div class="col-md-12">
+        <div>
+            <script type="text/ng-template" id="modalContent.html">
+                <div class="modal-header">
+                    <h3 class="modal-title">@L("Events")</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="error">{{Message}}</div>
+                    <div class="form-group">
+                        <label>@L("EventTitle"):</label>
+                        <input type="text" ng-model="NewEvent.title" autofocus class="form-control" required />
+                    </div>
+                    <div class="form-group">
+                        <label>@L("Description"):</label>
+                        <textarea ng-model="NewEvent.description" autofocus class="form-control"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>@L("TimeSlot"):</label>
+                        <span>
+                            {{NewEvent.start}} - {{NewEvent.end}}
+                        </span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" type="button" ng-show="NewEvent.FirstTime" ng-click="ok()">@L("Save")</button>
+                    <button class="btn btn-success" type="button" ng-show="!NewEvent.FirstTime" ng-click="update()">@L("Update")</button>
+                    <button class="btn btn-danger" type="button" ng-show="!NewEvent.FirstTime" ng-click="delete()">@L("Delete") </button>
+                    <button class="btn btn-warning" type="button" ng-click="cancel()">@L("Cancel")</button>
+                </div>
+            </script>
+            
+            <script type="text/ng-template" id="modalEventLists.html">
+                <div class="modal-header">
+                    <h3 class="modal-title">@L("EventListManaging")</h3>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <input class="form-control" placeholder="@L("FindOrAddAnotherList")" type="text" ng-model="newList" />
+                        <input class="form-control" placeholder="@L("PassworForSharing")" ng-model="sharingPassword" />
+                        <button class="form-control btn btn-primary" ng-click="addList()">
+                            <i class="fa fa-plus"></i>@L("Add")
+                        </button>
+                    </form>
+                    <ul class="list-group">
+                        <li class="list-group-item" ng-repeat="list in eventLists | filter: newList">
+                            <span ng-click="editList(list)" ng-show="!list.editList">{{list.title}}</span>
+                            <i class="fa fa-edit pull-right blue" ng-show="list.editList" ng-click="list.editList = false"></i>
+                            <label class="editInput" ng-show="list.sharingKey && !list.editList">@L("Key"): </label>
+                            <label class="editInput" ng-show="list.sharingKey && !list.editList">{{list.sharingKey}}</label>
+                            <i ng-click="removeList(list)" class="fa fa-remove pull-right red"></i>
+                            <form ng-submit="saveEditsList(list, 'submit')" ng-show="list.editList" class="editInput">
+                                <input class="editInput" ng-show="list.editList" ng-trim="false" ng-model="list.title" event-escape="revertEditsList(list)" ng-blur="saveEditsList(list, 'blur')" event-focus="list == editedList">
+                                <input class="editInput" ng-show="list.editList" type="color" ng-model="list.color" event-escape="revertEditsList(list)" ng-blur="saveEditsList(list, 'blur')" event-focus="list == editedList">
+                            </form>
+                        </li>
+                    </ul>
+                    <form>
+                        <input class="form-control" placeholder="@L("EnterFollowKey")" type="text" ng-disabled="saving" ng-model="followKey" />
+                        <input class="form-control" placeholder="@L("EnterPassword")" ng-model="followPassword" />
+                        <button class="form-control btn btn-primary" ng-click="follow()">
+                            <i class="fa fa-bell-o"></i>@L("Follow")
+                        </button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" type="button" ng-click="ok()">@L("Ok")</button>
+                </div>
+            </script>
+
+            <div class="row fullcalendar-div"">
+                <div class="col-md-8 fullcalendar-div">
+                    <div id="calendar" ui-calendar="fullUiConfig.calendar"  calendar="myCalendar" class="fullcalendar-div"></div>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div ng-dropdown-multiselect="" class="event-selector" options="eventLists" selected-model="selectedEventLists" extra-settings="multiselectSettings" events="multiselectEvents"></div>
+
+                     <button class="btn btn-danger pull-right manage-eventlist-btn" ng-click="showEventListManage()">@L("ManageLists")</button>
+
+                        <div ng-show="isSelectedEvent" class="alert" style="margin-top: 50px">
+                            <h2> @L("SelectedEvent"):</h2>
+                            <h3 style="color: #A9A50E">{{SelectedEvent.title}}</h3>
+                            <p>{{SelectedEvent.description}}</p>
+                            <p>{{SelectedEvent.start}} - {{SelectedEvent.end}}</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>

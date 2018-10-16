@@ -1,0 +1,105 @@
+﻿
+.sidenav {
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #0099ff; 
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+    text-align: center;
+}
+
+.sidenav li {
+    width: 250px;
+    list-style-type: none;
+    align-content: center;
+    justify-content: center;
+}
+
+.sidenav ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s
+    }
+
+        .sidenav a:hover, .offcanvas a:focus {
+            color: #f1f1f1;
+        }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+    margin-left: 90px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+        .sidenav a {
+            font-size: 18px;
+        }
+}
+
+
+/*//////////////////////////////////////////////////////////*/
+.icon-bar {
+    height: 100%;
+    width: 90px;
+    position: fixed;
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: dodgerblue;
+    overflow-x: hidden;
+    padding-top: 60px;
+    text-align: center;
+}
+
+.icon-bar li {
+    list-style-type: none; 
+    color: white;
+}
+
+.icon-bar ul {
+    margin-left: 0; 
+    padding-left: 0; 
+}
+.icon-bar a {
+    text-decoration: none;
+    padding: 8px 8px 8px 32px;
+    font-size: 25px;
+    color: #dddddd;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+    .icon-bar a:hover, .offcanvas a:focus {
+        color: #ffffff;
+    }
+
+    .icon-bar .active {
+        background-color: #0055ff;
+    }
+
+
